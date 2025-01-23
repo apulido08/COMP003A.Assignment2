@@ -31,7 +31,16 @@ namespace COMP003A.Assignment2
             isStudent = bool.Parse(Console.ReadLine());
 
             int futureAge = userAge + 5;
-            bool 
+            bool ageAdult = userAge >= 65;
+            double ifStudent = productPrice * .09;
+            double ifSenior = productPrice * .08;
+
+
+
+            Console.WriteLine($"\nHello, {userFistName} {userLastName}! ");
+            Console.WriteLine($"In 5 years you will be {futureAge}");
+            Console.WriteLine($"The original price of the item you are interested in is {productPrice}");
+            Console.WriteLine($"");
 
 
 
