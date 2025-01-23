@@ -1,7 +1,7 @@
 ﻿// Author: Alvaro Pulido
 // Course: COMP003
 // Faculty: Jonathan Cruz
-// Purpose: 
+// Purpose: Discount Calculator 
 namespace COMP003A.Assignment2
 {
     internal class Program
@@ -32,15 +32,16 @@ namespace COMP003A.Assignment2
 
             int futureAge = userAge + 5;
             bool ageAdult = userAge >= 65;
-            double ifStudent = productPrice * .09;
-            double ifSenior = productPrice * .08;
+            double ifStudent = productPrice * .9;
+            double ifSenior = productPrice * .8;
 
 
 
             Console.WriteLine($"\nHello, {userFistName} {userLastName}! ");
             Console.WriteLine($"In 5 years you will be {futureAge}");
             Console.WriteLine($"The original price of the item you are interested in is {productPrice}");
-            Console.WriteLine($"");
+            Console.WriteLine($"As a student, your discounted price is {ifStudent.ToString("N")}");
+            Console.WriteLine($"As a senior, your discounted price is {ifSenior.ToString("N")}");
 
 
 
